@@ -1,0 +1,68 @@
+<html>
+<head>
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Informações do Paciente</h2>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Sexo</th>
+    <th>Peso (Kg)</th>
+  </tr>
+  <tr>
+    <td>{{patientName}}</td>
+    <td>{{patientAge}}</td>
+    <td>{{patientGender}}</td>
+    <td>{{patientWeight}}</td>
+  </tr>
+</table>
+
+<h2>Nº de Tubetes de Anestésicos</h2>
+
+<table>
+    <tr>
+        <th>Anestésico</th>
+        <th>Número de Tubetes</th>
+    </tr>
+    <tr>
+        <td>Lidocaína</td>
+        <td>{{lidocaineTubes}}</td>
+    </tr>
+    <tr>
+        <td>Mepivacaína</td>
+        <td>{{mepivacaineTubes}}</td>
+    </tr>
+    <tr>
+        <td>Articaína</td>
+        <td>{{articaineTubes}}</td>
+    </tr>
+    <tr>
+        <td>Prilocaína</td>
+        <td>{{prilocaineTubes}}</td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
